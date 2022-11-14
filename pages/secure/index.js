@@ -1,10 +1,7 @@
 import { useSession, getSession } from "next-auth/client";
-import { redirect } from "next/dist/next-server/server/api-utils";
-import { useRouter } from "next/router";
 import Header from "../../components/Header";
 import MoviesCollection from "../../components/MoviesCollection";
-import ShowsCollection from "../../components/ShowsCollection";
-import Slider from "../../components/slider";
+import Slider from "../../components/Slider";
 export default function Protected({ popularMovies, top_ratedMovies }) {
   const [session, loading] = useSession();
   return (
